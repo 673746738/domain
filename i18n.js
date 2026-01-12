@@ -56,7 +56,7 @@ const translations = {
         footerNote: "本页面仅用于展示域名价值和AI工具列表，域名现对外出售",
         
         // Language Switcher
-        langSwitch: "English"
+        langSwitch: "Switch to English"
     },
     en: {
         // Meta
@@ -114,7 +114,7 @@ const translations = {
         footerNote: "This page is only for displaying domain value and AI tool list, domain is currently for sale",
         
         // Language Switcher
-        langSwitch: "中文"
+        langSwitch: "切换到中文"
     }
 };
 
