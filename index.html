@@ -9,15 +9,20 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+    <!-- Language Switcher -->
+    <div class="lang-switcher-container">
+        <button id="lang-switcher" class="lang-switcher" onclick="window.i18n.toggleLanguage()">English</button>
+    </div>
+
     <!-- Hero Section -->
     <section class="hero">
         <div class="container">
             <h1 class="hero-title">globalnav.ai</h1>
-            <p class="hero-subtitle">全球AI导航与聚合入口</p>
-            <p class="hero-description">涵盖市面上所有主流AI工具、模型和平台的一站式导航</p>
+            <p class="hero-subtitle" data-i18n="heroSubtitle">全球AI导航与聚合入口</p>
+            <p class="hero-description" data-i18n="heroDescription">涵盖市面上所有主流AI工具、模型和平台的一站式导航</p>
             <div class="cta-buttons">
-                <a href="#contact" class="btn btn-primary">咨询域名购买</a>
-                <a href="#ai-list" class="btn btn-secondary">浏览AI列表</a>
+                <a href="#contact" class="btn btn-primary" data-i18n="btnConsultDomain">咨询域名购买</a>
+                <a href="#ai-list" class="btn btn-secondary" data-i18n="btnBrowseAI">浏览AI列表</a>
             </div>
         </div>
     </section>
@@ -25,27 +30,27 @@
     <!-- Domain Value Section -->
     <section class="domain-value">
         <div class="container">
-            <h2>为什么选择 globalnav.ai？</h2>
+            <h2 data-i18n="domainValueTitle">为什么选择 globalnav.ai？</h2>
             <div class="value-grid">
                 <div class="value-card">
                     <div class="value-icon">🌐</div>
-                    <h3>全球视野</h3>
-                    <p>Global + Navigation 的组合，完美诠释全球AI导航的定位</p>
+                    <h3 data-i18n="valueGlobal">全球视野</h3>
+                    <p data-i18n="valueGlobalDesc">Global + Navigation 的组合，完美诠释全球AI导航的定位</p>
                 </div>
                 <div class="value-card">
                     <div class="value-icon">🎯</div>
-                    <h3>精准定位</h3>
-                    <p>专为AI导航、聚合、搜索和社区平台设计的最佳域名</p>
+                    <h3 data-i18n="valuePrecise">精准定位</h3>
+                    <p data-i18n="valuePreciseDesc">专为AI导航、聚合、搜索和社区平台设计的最佳域名</p>
                 </div>
                 <div class="value-card">
                     <div class="value-icon">💎</div>
-                    <h3>品牌价值</h3>
-                    <p>简洁易记，具有极高的品牌识别度和商业价值</p>
+                    <h3 data-i18n="valueBrand">品牌价值</h3>
+                    <p data-i18n="valueBrandDesc">简洁易记，具有极高的品牌识别度和商业价值</p>
                 </div>
                 <div class="value-card">
                     <div class="value-icon">📈</div>
-                    <h3>市场潜力</h3>
-                    <p>AI行业爆发式增长，导航类平台需求巨大</p>
+                    <h3 data-i18n="valueMarket">市场潜力</h3>
+                    <p data-i18n="valueMarketDesc">AI行业爆发式增长，导航类平台需求巨大</p>
                 </div>
             </div>
         </div>
@@ -54,12 +59,12 @@
     <!-- AI Categories Section -->
     <section id="ai-list" class="ai-categories">
         <div class="container">
-            <h2>涵盖所有主流AI工具</h2>
-            <p class="section-subtitle">本页面持续更新，展示市面上最热门的AI产品</p>
+            <h2 data-i18n="aiCategoriesTitle">涵盖所有主流AI工具</h2>
+            <p class="section-subtitle" data-i18n="sectionSubtitle">本页面持续更新，展示市面上最热门的AI产品</p>
 
             <!-- 大语言模型 -->
             <div class="category-section">
-                <h3 class="category-title">🤖 大语言模型 (LLM)</h3>
+                <h3 class="category-title" data-i18n="categoryLLM">🤖 大语言模型 (LLM)</h3>
                 <div class="ai-grid">
                     <a class="ai-card" href="https://chatgpt.com" target="_blank" rel="noopener noreferrer">
                         <div class="ai-name">ChatGPT</div>
@@ -126,7 +131,7 @@
 
             <!-- AI搜索 -->
             <div class="category-section">
-                <h3 class="category-title">🔍 AI搜索</h3>
+                <h3 class="category-title" data-i18n="categoryAISearch">🔍 AI搜索</h3>
                 <div class="ai-grid">
                     <a class="ai-card" href="https://www.perplexity.ai" target="_blank" rel="noopener noreferrer">
                         <div class="ai-name">Perplexity</div>
@@ -157,7 +162,7 @@
 
             <!-- AI办公生产力 -->
             <div class="category-section">
-                <h3 class="category-title">💼 AI办公与生产力</h3>
+                <h3 class="category-title" data-i18n="categoryOffice">💼 AI办公与生产力</h3>
                 <div class="ai-grid">
                     <a class="ai-card" href="https://copilot.microsoft.com" target="_blank" rel="noopener noreferrer">
                         <div class="ai-name">Microsoft Copilot</div>
@@ -204,7 +209,7 @@
 
             <!-- AI设计 -->
             <div class="category-section">
-                <h3 class="category-title">🎨 AI设计与图像生成</h3>
+                <h3 class="category-title" data-i18n="categoryDesign">🎨 AI设计与图像生成</h3>
                 <div class="ai-grid">
                     <a class="ai-card" href="https://www.midjourney.com" target="_blank" rel="noopener noreferrer">
                         <div class="ai-name">Midjourney</div>
@@ -251,7 +256,7 @@
 
             <!-- AI视频 -->
             <div class="category-section">
-                <h3 class="category-title">🎬 AI视频生成</h3>
+                <h3 class="category-title" data-i18n="categoryVideo">🎬 AI视频生成</h3>
                 <div class="ai-grid">
                     <a class="ai-card" href="https://openai.com/sora" target="_blank" rel="noopener noreferrer">
                         <div class="ai-name">Sora</div>
@@ -282,7 +287,7 @@
 
             <!-- AI音频 -->
             <div class="category-section">
-                <h3 class="category-title">🎵 AI音频与音乐</h3>
+                <h3 class="category-title" data-i18n="categoryAudio">🎵 AI音频与音乐</h3>
                 <div class="ai-grid">
                     <a class="ai-card" href="https://suno.ai" target="_blank" rel="noopener noreferrer">
                         <div class="ai-name">Suno</div>
@@ -313,7 +318,7 @@
 
             <!-- AI编程 -->
             <div class="category-section">
-                <h3 class="category-title">💻 AI编程工具</h3>
+                <h3 class="category-title" data-i18n="categoryCoding">💻 AI编程工具</h3>
                 <div class="ai-grid">
                     <a class="ai-card" href="https://github.com/features/copilot" target="_blank" rel="noopener noreferrer">
                         <div class="ai-name">GitHub Copilot</div>
@@ -352,7 +357,7 @@
 
             <!-- AI数据分析 -->
             <div class="category-section">
-                <h3 class="category-title">📊 AI数据分析</h3>
+                <h3 class="category-title" data-i18n="categoryDataAnalysis">📊 AI数据分析</h3>
                 <div class="ai-grid">
                     <a class="ai-card" href="https://chatgpt.com" target="_blank" rel="noopener noreferrer">
                         <div class="ai-name">ChatGPT Data Analysis</div>
@@ -375,7 +380,7 @@
 
             <!-- AI助手 -->
             <div class="category-section">
-                <h3 class="category-title">🤝 AI助手与聊天机器人</h3>
+                <h3 class="category-title" data-i18n="categoryAssistant">🤝 AI助手与聊天机器人</h3>
                 <div class="ai-grid">
                     <a class="ai-card" href="https://chatgpt.com" target="_blank" rel="noopener noreferrer">
                         <div class="ai-name">ChatGPT</div>
@@ -402,7 +407,7 @@
 
             <!-- 其他AI工具 -->
             <div class="category-section">
-                <h3 class="category-title">🔧 其他AI工具</h3>
+                <h3 class="category-title" data-i18n="categoryOther">🔧 其他AI工具</h3>
                 <div class="ai-grid">
                     <a class="ai-card" href="https://huggingface.co" target="_blank" rel="noopener noreferrer">
                         <div class="ai-name">Hugging Face</div>
@@ -439,15 +444,15 @@
             <div class="stats-grid">
                 <div class="stat-item">
                     <div class="stat-number">100+</div>
-                    <div class="stat-label">AI工具覆盖</div>
+                    <div class="stat-label" data-i18n="statTools">AI工具覆盖</div>
                 </div>
                 <div class="stat-item">
                     <div class="stat-number">15+</div>
-                    <div class="stat-label">AI分类</div>
+                    <div class="stat-label" data-i18n="statCategories">AI分类</div>
                 </div>
                 <div class="stat-item">
-                    <div class="stat-number">持续更新</div>
-                    <div class="stat-label">最新AI产品</div>
+                    <div class="stat-number" data-i18n="statUpdatesText">持续更新</div>
+                    <div class="stat-label" data-i18n="statUpdates">最新AI产品</div>
                 </div>
             </div>
         </div>
@@ -456,23 +461,23 @@
     <!-- Contact Section -->
     <section id="contact" class="contact">
         <div class="container">
-            <h2>域名出售咨询</h2>
-            <p class="contact-description">globalnav.ai 域名现对外出售，适合AI导航、聚合、搜索平台使用</p>
+            <h2 data-i18n="contactTitle">域名出售咨询</h2>
+            <p class="contact-description" data-i18n="contactDescription">globalnav.ai 域名现对外出售，适合AI导航、聚合、搜索平台使用</p>
             <div class="contact-info">
                 <div class="contact-card">
                     <div class="contact-icon">📧</div>
-                    <h3>邮箱联系</h3>
+                    <h3 data-i18n="contactEmail">邮箱联系</h3>
                     <a href="mailto:673746738@qq.com" class="contact-link">673746738@qq.com</a>
                 </div>
                 <div class="contact-card">
                     <div class="contact-icon">🌐</div>
-                    <h3>域名信息</h3>
+                    <h3 data-i18n="contactDomain">域名信息</h3>
                     <p class="domain-info">globalnav.ai</p>
-                    <p class="domain-desc">.ai 顶级域名，AI行业专属</p>
+                    <p class="domain-desc" data-i18n="contactDomainDesc">.ai 顶级域名，AI行业专属</p>
                 </div>
             </div>
             <div class="contact-note">
-                <p>💡 <strong>提示：</strong> 本域名非常适合用于构建AI工具导航、聚合平台、AI搜索引擎或AI社区网站。如有购买意向，请通过邮箱联系。</p>
+                <p data-i18n-html="contactNote">💡 <strong>提示：</strong> 本域名非常适合用于构建AI工具导航、聚合平台、AI搜索引擎或AI社区网站。如有购买意向，请通过邮箱联系。</p>
             </div>
         </div>
     </section>
@@ -480,11 +485,12 @@
     <!-- Footer -->
     <footer class="footer">
         <div class="container">
-            <p>&copy; 2024 globalnav.ai - 全球AI导航 | 域名出售</p>
-            <p class="footer-note">本页面仅用于展示域名价值和AI工具列表，域名现对外出售</p>
+            <p data-i18n="footerCopyright">&copy; 2024 globalnav.ai - 全球AI导航 | 域名出售</p>
+            <p class="footer-note" data-i18n="footerNote">本页面仅用于展示域名价值和AI工具列表，域名现对外出售</p>
         </div>
     </footer>
 
+    <script src="i18n.js"></script>
     <script src="script.js"></script>
 </body>
 </html>
